@@ -1,0 +1,14 @@
+# Requirements for LLM_model_scratch project
+# Install with: pip install -r requirements.txt
+
+# Core ML/runtime
+torch>=1.13.0
+
+# Tokenizer for GPT-2 BPE used in the project
+tiktoken>=0.4.0
+
+# Web UI
+streamlit>=1.20.0
+
+# Optional (use if you need Git LFS tooling in CI or helpers)
+# git-lfs (not a pip package) - see https://git-lfs.github.com/ for install
