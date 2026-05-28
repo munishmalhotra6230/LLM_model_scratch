@@ -52,7 +52,7 @@ def load_model(path):
         print("Warning printing weights failed:", e)
 
     return model
-Model=load_model(r'spam_ham_classifier\spam_ham (1).pth')
+Model=load_model(r'spam_ham_classifier\rex.pth')
 
 def classify_review(text, model=Model, tokenizer=tokenizer, device=device, max_length=257, pad_token_id=50256):
     model.eval()
@@ -78,19 +78,4 @@ def classify_review(text, model=Model, tokenizer=tokenizer, device=device, max_l
 
     return label, probs_list
 
-# if __name__ == "__main__":
-#     model = load_model(r'spam_ham_classifier\spam_ham (1).pth')
-#     print(f"Running on: {device}\n")
-
-#     while True:
-#         text = input("Enter message (or 'quit'): ")
-#         if text.lower() == 'quit':
-#             break
-#         if not text:
-#             continue
-#         result = classify_review(text=text, model=model,
-#                                  tokenizer=tokenizer, device=device)
-#         print(result)
-#         print("-------------------------")
-        
         # Clean outpu
